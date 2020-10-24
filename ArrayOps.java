@@ -8,4 +8,12 @@ public class ArrayOps{
     return a;
   }
 
+  public static int largest(int[] arr){
+    int a = 0;
+    for (int i = 0; i< arr.length && arr[i]>a; i++){
+      a = arr[i];
+    }
+    return a;
+  }
+
 }
