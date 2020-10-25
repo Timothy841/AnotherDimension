@@ -17,6 +17,9 @@ public class Tester{
     int[][] h = {
       {  2,  2, 2 },
       {  2, 2, 2 } };
+    int[][] E = {
+      {  2,  4, 2 },
+      {  2, 2, 2 } };
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.largest(a));
     System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(e)));
@@ -31,5 +34,8 @@ public class Tester{
     System.out.println(ArrayOps.isColMagic(f));
     System.out.println(ArrayOps.isColMagic(g));
     System.out.println(ArrayOps.isColMagic(h));
+    System.out.println(ArrayOps.arrToString(ArrayOps.col(e, 1)));
+    System.out.println(ArrayOps.isLocationMagic(E, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
   }
 }

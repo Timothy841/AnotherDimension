@@ -97,4 +97,16 @@ public class ArrayOps{
     return a;
   }
 
+  public static int[] col(int[][] matrix, int col){
+    int[] a = new int[matrix.length];
+    for (int i = 0; i< matrix.length; i++){
+      a[i] += matrix[i][col];
+    }
+    return a;
+  }
+
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+    return (sum(matrix[row]) == sum(col(matrix,col)));
+  }
+
 }
